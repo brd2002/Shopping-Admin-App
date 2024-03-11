@@ -26,7 +26,7 @@ class ProductFragment : Fragment() {
             super.onViewCreated(view, savedInstanceState)
         binding.apply {
             addButton.setOnClickListener {
-                var intent = Intent(this, AddProductActivity::class.java)
+                var intent = Intent(requireContext(), AddProductActivity::class.java)
                 startActivity(intent)
             }
         }
