@@ -1,13 +1,12 @@
-package com.example.shoppingadmin.ui.notifications
+package com.example.shoppingadmin.sheets.product
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
-
+class ProductViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is Product Fragment"
     }
     val text: LiveData<String> = _text
 }
