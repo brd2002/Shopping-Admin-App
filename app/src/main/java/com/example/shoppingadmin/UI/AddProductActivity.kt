@@ -39,23 +39,11 @@ class AddProductActivity : AppCompatActivity() {
         // Callback is invoked after the user selects a media item or closes the
         // photo picker.
         if (uri != null) {
-
-            uploadImage(PRODUCT_IMAGES_FOLDER_PATH, uri) { it, imageUrl ->
-                if (it) {
-                    product.displayImage = imageUrl
-                    binding.showImage.setImageURI(uri)
-                    //  product.productDisplayImages
-                    binding.showImage.visibility = View.VISIBLE
-
-                    Toast.makeText(this, "Image found Successfully!", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(this, "Image Not found !", Toast.LENGTH_SHORT).show()
-
-                }
-            }
-
+            binding.showImage.setImageURI(uri)
+            binding.showImage.visibility = View.VISIBLE
+            Log.d("PhotoPicker", "Selected URI: $uri")
         } else {
-            Toast.makeText(this, "Image Not found !", Toast.LENGTH_SHORT).show()
+            Log.d("PhotoPicker", "No media selected")
         }
     }
 //    / Registers a photo picker activity launcher in multi-select mode.
