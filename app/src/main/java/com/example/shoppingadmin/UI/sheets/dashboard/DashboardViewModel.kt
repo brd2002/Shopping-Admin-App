@@ -1,4 +1,4 @@
-package com.example.shoppingadmin.sheets.dashboard
+package com.example.shoppingadmin.UI.sheets.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

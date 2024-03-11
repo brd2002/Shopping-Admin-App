@@ -1,4 +1,4 @@
-package com.example.shoppingadmin.sheets.dashboard
+package com.example.shoppingadmin.UI.sheets.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

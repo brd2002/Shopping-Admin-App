@@ -1,4 +1,4 @@
-package com.example.shoppingadmin.sheets.notifications
+package com.example.shoppingadmin.UI.sheets.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

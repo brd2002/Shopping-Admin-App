@@ -1,4 +1,4 @@
-package com.example.shoppingadmin.sheets.home
+package com.example.shoppingadmin.UI.sheets.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
