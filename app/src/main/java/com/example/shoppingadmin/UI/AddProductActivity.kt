@@ -14,7 +14,7 @@ import com.example.shoppingadmin.PRODUCT_IMAGES_FOLDER_PATH
 import com.example.shoppingadmin.R
 import com.example.shoppingadmin.databinding.ActivityAddProductBinding
 import com.example.shoppingadmin.products.models.Product
-import com.example.shoppingadmin.uploadImage
+
 
 class AddProductActivity : AppCompatActivity() {
     private lateinit var binding:ActivityAddProductBinding
@@ -41,21 +41,10 @@ class AddProductActivity : AppCompatActivity() {
         if (uri != null) {
             binding.showImage.setImageURI(uri)
             binding.showImage.visibility = View.VISIBLE
-            Log.d("PhotoPicker", "Selected URI: $uri")
+            Log.d("PhotoPicker", "Image is selected")
         } else {
             Log.d("PhotoPicker", "No media selected")
         }
     }
-//    / Registers a photo picker activity launcher in multi-select mode.
-    // In this example, the app lets the user select up to 5 media files.
-    val pickMedia1 =
-        registerForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(10)) { uris ->
-            // Callback is invoked after the user selects media items or closes the
-            // photo picker.
-            if (uris.isNotEmpty()) {
-                Log.d("PhotoPicker", "Number of items selected: ${uris.size}")
-            } else {
-                Log.d("PhotoPicker", "No media selected")
-            }
-        }
+
 }
